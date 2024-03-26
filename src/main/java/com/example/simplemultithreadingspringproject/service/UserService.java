@@ -45,6 +45,7 @@ public class UserService {
         return CompletableFuture.completedFuture(users);
     }
 
+
     private List<User> parseCSVFile(final MultipartFile file) throws Exception {
         final List<User> users = new ArrayList<>();
         try {
@@ -63,7 +64,6 @@ public class UserService {
                 logger.error("Can't to parse CSV file", e);
                 throw new Exception("Can't to parse CSV file", e);
             }
-
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
