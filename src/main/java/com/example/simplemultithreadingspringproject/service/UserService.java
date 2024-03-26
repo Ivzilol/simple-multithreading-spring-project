@@ -17,7 +17,6 @@ import java.util.concurrent.CompletableFuture;
 
 @Service
 public class UserService {
-
     private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
