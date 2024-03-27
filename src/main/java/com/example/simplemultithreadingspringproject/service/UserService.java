@@ -26,7 +26,6 @@ public class UserService {
 
     Logger logger = LoggerFactory.getLogger(UserService.class);
 
-
     @Async
     public CompletableFuture<List<User>> saveUser(MultipartFile file) throws Exception {
         long start = System.currentTimeMillis();
