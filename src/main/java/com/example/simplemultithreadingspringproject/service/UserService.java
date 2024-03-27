@@ -22,7 +22,6 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    Object target;
     Logger logger = LoggerFactory.getLogger(UserService.class);
 
 
