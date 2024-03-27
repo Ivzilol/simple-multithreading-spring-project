@@ -37,7 +37,6 @@ public class UserService {
         return CompletableFuture.completedFuture(users);
     }
 
-
     @Async
     public CompletableFuture<List<User>> findAllUsers() {
         logger.info("get list of user by " + Thread.currentThread().getName());
