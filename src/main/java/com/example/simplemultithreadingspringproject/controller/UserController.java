@@ -44,4 +44,5 @@ public class UserController {
         CompletableFuture.allOf(users1, users2, users3).join();
         return ResponseEntity.status(HttpStatus.OK).build();
     }
+
 }
