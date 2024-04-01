@@ -22,6 +22,7 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
+
     @PostMapping(value = "/users", consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = "application/json")
     public ResponseEntity<?> saveUser(@RequestParam(value = "files")MultipartFile[] files) throws Exception {
         for (MultipartFile file : files) {
