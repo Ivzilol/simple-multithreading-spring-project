@@ -30,6 +30,7 @@ public class UserController {
         }
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
+
     @GetMapping(value = "/users", produces = "application/json")
     public CompletableFuture<ResponseEntity<?>> findAllUsers() {
         return userService.findAllUsers().thenApply(ResponseEntity::ok);
