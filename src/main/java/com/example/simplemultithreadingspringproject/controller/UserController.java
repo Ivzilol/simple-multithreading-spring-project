@@ -35,6 +35,7 @@ public class UserController {
     public CompletableFuture<ResponseEntity<?>> findAllUsers() {
         return userService.findAllUsers().thenApply(ResponseEntity::ok);
     }
+
     @GetMapping(value = "/getUsersByThread", produces = "application/json")
     public ResponseEntity<?> getUsers() {
         CompletableFuture<List<User>> users1 = userService.findAllUsers();
